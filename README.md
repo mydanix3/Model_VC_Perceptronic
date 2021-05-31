@@ -118,11 +118,13 @@ Per tal de calcular la coordenada Z farem ús de detector de profunditat. Calcul
 #   Experiments, resultats i anàlisi
 ## Estimar distancia
 
-![Imatge4](https://github.com/mydanix3/perceptronico/blob/main/images_github/4.png)
+![Imatge4](https://github.com/mydanix3/perceptronico/blob/main/images_github/3.png)
+
 Fig. 4. Imatge treta de la simulació.
 
 
-![Imatge5](https://github.com/mydanix3/perceptronico/blob/main/images_github/5.png)
+![Imatge5](https://github.com/mydanix3/perceptronico/blob/main/images_github/4.png)
+
 Fig. 5. Imatge treta per la càmera del robot i procesada pels models de VC.
 
 Per aquest apartat visualitzem directament els resultat ja que el model utilitzat “Learning the Depths of Moving People by Watching Frozen People”[9], no permet realitzar un entrenament. En la Fig4 podem veure una captura de la simulació, i en la Fig5 el resultat, de les imatges processades pel model de profunditat i el detector d'objectes. 
