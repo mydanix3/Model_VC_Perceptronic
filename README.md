@@ -27,8 +27,7 @@ Un model que genera un mapa de profunditat.
 Un model que detecta els objectes.
 Un mòdul que genera un àudio, amb els objectes de l'escena i les seves posicions.
 
-
-
+![Imatge0](https://github.com/mydanix3/perceptronico/blob/main/images_github/0.png)
 
 Fig. 1. Escena on podem veure a l'usuari guiat pel robot com si fos un gos guia, el robot utilitza un line tracker per poder seguir un trajecte.
 El nostre projecte té 2 vessants per executar els models de VC:
@@ -69,7 +68,7 @@ També hem vist un altre model anomenat YOLACT++[12], forçament inspirat el YOL
 # Proposta
 ## Arquitectura software.
 
-
+![Imatge1](https://github.com/mydanix3/perceptronico/blob/main/images_github/1.png)
 Fig. 2. Esquema que representa la arquitectura software del projecte.
 
 La nostra aplicació té dues maneres d'executar el model de VC.
@@ -93,6 +92,7 @@ Per la complexitat computacional que comporta estimar les profunditats d’objec
 
 ### Detecció d’objectes
 
+![Imatge2](https://github.com/mydanix3/perceptronico/blob/main/images_github/2.png)
 Fig. 3. LabelImg[12] Programa per realitzar etiquetatge de imatges[12].
 
 Com hem explicat en el segon apartat, de cara a utilitzar el YOLO[10], el que hem fet ha sigut reentrenar el model, que previamente s’ha entrenat fent servir el dataset de COCO[11].
@@ -118,10 +118,11 @@ Per tal de calcular la coordenada Z farem ús de detector de profunditat. Calcul
 #   Experiments, resultats i anàlisi
 ## Estimar distancia
 
+![Imatge4](https://github.com/mydanix3/perceptronico/blob/main/images_github/4.png)
 Fig. 4. Imatge treta de la simulació.
 
-![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
 
+![Imatge5](https://github.com/mydanix3/perceptronico/blob/main/images_github/5.png)
 Fig. 5. Imatge treta per la càmera del robot i procesada pels models de VC.
 
 Per aquest apartat visualitzem directament els resultat ja que el model utilitzat “Learning the Depths of Moving People by Watching Frozen People”[9], no permet realitzar un entrenament. En la Fig4 podem veure una captura de la simulació, i en la Fig5 el resultat, de les imatges processades pel model de profunditat i el detector d'objectes. 
@@ -136,12 +137,13 @@ Per aquest apartat visualitzem directament els resultat ja que el model utilitza
 
 ## Detecció de objectes
 
+![Graf0](https://github.com/mydanix3/perceptronico/blob/main/images_github/5.jpg)
 Graf. 1. Confusion Matrix model sense entrenar amb dades de la simulació.
-
+![Graf1](https://github.com/mydanix3/perceptronico/blob/main/images_github/6.jpg)
 Graf. 2. Confusion Matrix model entrenat amb dades de la simulació.
-
+![Graf2](https://github.com/mydanix3/perceptronico/blob/main/images_github/7.jpg)
 Graf. 3. F1-score model sense entrenar amb dades de la simulació.
-
+![Graf3](https://github.com/mydanix3/perceptronico/blob/main/images_github/8.jpg)
 Graf. 4. F1-score model entrenat amb dades de la simulació.
 
 
