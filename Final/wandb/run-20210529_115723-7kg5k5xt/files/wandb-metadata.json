@@ -1,0 +1,33 @@
+{
+    "os": "Linux-5.4.109+-x86_64-with-Ubuntu-18.04-bionic",
+    "python": "3.7.10",
+    "heartbeatAt": "2021-05-29T11:57:26.173805",
+    "startedAt": "2021-05-29T11:57:23.915025",
+    "docker": null,
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "cpu_count": 2,
+    "cuda": "11.0.228",
+    "args": [
+        "--img",
+        "640",
+        "--batch",
+        "2",
+        "--epochs",
+        "5",
+        "--data",
+        "./prueba.yaml",
+        "--cfg",
+        "./models/yolov5s.yaml",
+        "--weights",
+        "yolov5s.pt",
+        "--name",
+        "yolov5prueba"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePath": "train.py",
+    "host": "c5fc6fc403f4",
+    "username": "root",
+    "executable": "/usr/bin/python3"
+}
